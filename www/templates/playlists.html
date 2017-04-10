@@ -1,0 +1,56 @@
+<ion-view view-title="Dashboard" class="bar-assertive">
+  <ion-content class='has-panic' lazy-scroll overflow-scroll="true">
+ <div class="row style="background-color: green;">
+ 
+ <div class="card top"> 
+  
+
+ <button class="button button-icon button-clear ion-arrow-graph-up-left">Navigate</button></br></br>
+ <button class="button button-icon button-clear ion-stop">Board Brief</button></br></br>
+
+ <button class="button button-icon button-clear ion-briefcase">BriefCase</button></br></br>
+ </br>
+ </br></br></br></br>
+ <button class="button button-icon button-clear ion-home">Close menu</button></br></br>
+ 
+ 
+ </div>
+ 
+ 
+ <div>
+ 
+ </div>
+ 
+ <div class="col s9">
+ 
+ <div class="card">
+        <div class="item item-divider">
+           speed Zones
+        </div>
+		
+     <canvas id="bar" class="chart chart-line" chart-data="graph.data" chart-labels="graph.labels"></canvas>
+
+        
+    </div>
+    <div class="card">
+        <div class="item item-divider">
+           Count by zones
+        </div>
+         <canvas id="base" class="chart chart-bar" chart-data="graph.data" chart-labels="graph.labels" chart-colors="colors" >
+</canvas> 
+
+    </div>
+ 
+ 
+ </div>
+ 
+ <div>
+ 
+ 
+ </div>
+ 
+ 
+ 
+ </div>
+  </ion-content>
+</ion-view>
